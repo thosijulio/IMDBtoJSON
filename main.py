@@ -2,16 +2,20 @@ import imdb
 import xml.etree.ElementTree as ET
 
 # Create an instance of the IMDb class
-ia = imdb.IMDb()
+IMDB_INSTANCE = imdb.IMDb()
 
 # Fetch movie data by its title
 movie_title = "Chicken Run: Dawn of the Nugget"
-movies = ia.search_movie(movie_title)
+movies = IMDB_INSTANCE.search_movie(movie_title)
+
 if movies:
     # Get the first movie (assuming it's the correct one)
     movie = movies[0]
-    ia.update(movie)
+    movie_id = movie.movieID
 
+    IMDB_INSTANCE.update(movie, info=['credits'])
+
+    print(movie.get('cast'))
     # Create an XML structure
     movie_xml = ET.Element('movie')
     ET.SubElement(movie_xml, 'title').text = movie['title']
@@ -27,6 +31,6 @@ if movies:
 
     # Create the XML file
     xml_file = ET.ElementTree(movie_xml)
-    xml_file.write('movie_data.xml', encoding='utf-8', xml_declaration=True)
+    xml_file.write('Chicken Run - Dawn of the Nugget.xml', encoding='utf-8', xml_declaration=True)
 else:
     print("Movie not found")

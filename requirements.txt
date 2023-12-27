@@ -1,1 +1,4 @@
-IMDbPY
+cinemagoer
+bs4
+requests
+python-dotenv
