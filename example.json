@@ -1,3 +1,36 @@
 {
-  
+  "title": "",
+  "year": 0,
+  "cast": [
+    {
+      "actor": "",
+      "role": ""
+    }
+  ],
+  "genres": [
+    ""
+  ],
+  "runtimes": 0,
+  "countries": [
+    ""
+  ],
+  "colorInfo": [""],
+  "boxOffice": {
+    "budget": 0,
+    "cumulativeWorldwideGross": 0,
+    "currency": "$"
+  },
+  "languages": [""],
+  "director": [""],
+  "writer": [""],
+  "producer": [""],
+  "composer": [""],
+  "cinematographer": [""],
+  "editor": [""],
+  "productionCompanies": [
+    {
+      "id": 0,
+      "name": ""
+    }
+  ]
 }
