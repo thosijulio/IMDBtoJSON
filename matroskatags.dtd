@@ -1,8 +1,0 @@
-<!ELEMENT Tags (Tag+)>
-<!ELEMENT Tag (Targets,Simple+)>
-<!ELEMENT Targets (TargetTypeValue)>
-<!ELEMENT TargetTypeValue (#PCDATA)>
-<!ELEMENT Simple (Name,String?,Language?,Simple?)>
-<!ELEMENT Name (#PCDATA)>
-<!ELEMENT String (#PCDATA)>
-<!ELEMENT Language (#PCDATA)>
