@@ -13,7 +13,7 @@ if movies:
     movie = movies[0]
     movie_id = movie.movieID
 
-    IMDB_INSTANCE.update(movie, info=['credits'])
+    IMDB_INSTANCE.update(movie)
 
     print(movie.get('cast'))
     # Create an XML structure

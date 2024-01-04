@@ -1,13 +1,12 @@
 import requests
 import os
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 
 # Replace 'YOUR_API_KEY' with your actual TMDb API key
 api_key = os.environ.get('TMDB_API_KEY')
-
-print(api_key)
 
 # Movie title to search for
 movie_title = "Matrix"  # Replace this with the movie title you're interested in
@@ -27,14 +26,28 @@ if response.status_code == 200:
         movie_id = data['results'][0]['id']
 
         # Get details of the movie by its ID
-        movie_details_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=pt-BR/credits"
-        details_response = requests.get(movie_details_url)
+        request_movie_enUS = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US')
+        request_movie_ptBR = requests.get(f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=pt-BR&append_to_response=credits")
 
-        if details_response.status_code == 200:
-            movie_details = details_response.json()
-            # Get the Brazilian Portuguese title
-            print(movie_details)
-            # print(f"The title of the movie in Brazilian Portuguese is: {title_pt_br}")
+        if request_movie_ptBR.status_code == 200 and request_movie_enUS.status_code == 200:
+            movie_details_ptBR = request_movie_ptBR.json()
+            movie_details_enUS = request_movie_enUS.json()
+            
+            # Try to open the file, if exists
+            try:
+                with open('example.json', 'r') as file:
+                    data = json.load(file)
+            except FileNotFoundError:
+                # If file doesnt exists, creats a new object
+                data = {}
+            
+            data['title'] = {
+                "original": movie_details_enUS['original_title']
+            }
+
+            # write a JSON file with the new data (creating a new if is necessary)
+            with open('example.json', 'w') as file:
+                json.dump(data, file, indent=4)
         else:
             print("Failed to fetch movie details.")
     else:

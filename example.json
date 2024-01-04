@@ -1,36 +1,70 @@
 {
-  "title": "",
-  "year": 0,
-  "cast": [
-    {
-      "actor": "",
-      "role": ""
-    }
-  ],
-  "genres": [
-    ""
-  ],
-  "runtimes": 0,
-  "countries": [
-    ""
-  ],
-  "colorInfo": [""],
-  "boxOffice": {
-    "budget": 0,
-    "cumulativeWorldwideGross": 0,
-    "currency": "$"
-  },
-  "languages": [""],
-  "director": [""],
-  "writer": [""],
-  "producer": [""],
-  "composer": [""],
-  "cinematographer": [""],
-  "editor": [""],
-  "productionCompanies": [
-    {
-      "id": 0,
-      "name": ""
-    }
-  ]
+    "title": {
+        "original": "The Matrix"
+    },
+    "year": 0,
+    "cast": [
+        {
+            "actor": "",
+            "role": ""
+        }
+    ],
+    "genres": [
+        {
+            "enUS": [
+                ""
+            ],
+            "ptBR": [
+                ""
+            ]
+        }
+    ],
+    "runtimes": 0,
+    "countries": [
+        ""
+    ],
+    "colorInfo": [
+        ""
+    ],
+    "boxOffice": {
+        "budget": 0,
+        "cumulativeWorldwideGross": 0,
+        "currency": "$"
+    },
+    "overview": {
+        "enUS": "",
+        "ptBR": ""
+    },
+    "outline": {
+        "enUS": "",
+        "ptBR": ""
+    },
+    "rating": 0,
+    "languages": [
+        ""
+    ],
+    "director": [
+        ""
+    ],
+    "writer": [
+        ""
+    ],
+    "producer": [
+        ""
+    ],
+    "composer": [
+        ""
+    ],
+    "cinematographer": [
+        ""
+    ],
+    "editor": [
+        ""
+    ],
+    "production companies": [
+        {
+            "id": 0,
+            "name": ""
+        }
+    ]
 }
