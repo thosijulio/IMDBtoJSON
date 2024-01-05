@@ -4,7 +4,7 @@ ia = imdb.IMDb()
 
 # Retrieve a movie object
 # Search for the movie by its title
-movie_title = "Avengers"  # Replace with your movie title
+movie_title = "Inglorious Bastard"  # Replace with your movie title
 movies = ia.search_movie(movie_title)
 movie = movies[0]
 not_working_keys = ['directors', 'countries', 'writer', 'color info', 'original airdate']
@@ -50,8 +50,6 @@ for key in movie.keys():
         pass
     else:
         print(f"{key}: {movie[key]}")
-
-    print(movie.get('plot outline'))
 
 
 

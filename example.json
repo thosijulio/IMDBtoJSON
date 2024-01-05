@@ -4,25 +4,23 @@
         "enUS": "",
         "ptBR": ""
     },
-    "year": 0,
+    "releaseYear": "",
     "cast": [
         {
             "actor": "",
             "role": ""
         }
     ],
-    "genres": [
-        {
-            "enUS": [
-                ""
-            ],
-            "ptBR": [
-                ""
-            ]
-        }
-    ],
-    "runtimes": 0,
-    "countries": [
+    "genres": {
+        "enUS": [
+            ""
+        ],
+        "ptBR": [
+            ""
+        ]
+    },
+    "runtime": 0,
+    "productionCountries": [
         ""
     ],
     "colorInfo": [
@@ -37,7 +35,7 @@
         "enUS": "",
         "ptBR": ""
     },
-    "outline": {
+    "tagline": {
         "enUS": "",
         "ptBR": ""
     },
@@ -63,9 +61,9 @@
     "editor": [
         ""
     ],
-    "production companies": [
+    "productionCompanies": [
         {
-            "id": 0,
+            "country": "",
             "name": ""
         }
     ]
