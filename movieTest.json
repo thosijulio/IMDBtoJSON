@@ -285,5 +285,88 @@
             "role": "First Scalped Nazi, American Soldier in 'Pride of Nation'",
             "note": ""
         }
+    ],
+    "productionCountriesCodes": [
+        "de",
+        "us"
+    ],
+    "color info": [
+        "Color"
+    ],
+    "languageCodes": [
+        "en",
+        "de",
+        "fr",
+        "it"
+    ],
+    "director": [
+        {
+            "name": "Quentin Tarantino",
+            "notes": ""
+        }
+    ],
+    "writer": [
+        {
+            "name": "Quentin Tarantino",
+            "notes": "(written by)"
+        }
+    ],
+    "producer": [
+        {
+            "name": "Lawrence Bender",
+            "notes": ""
+        },
+        {
+            "name": "William Paul Clark",
+            "notes": "associate producer"
+        },
+        {
+            "name": "Christoph Fisser",
+            "notes": "co-producer (as Cristoph Fisser)"
+        },
+        {
+            "name": "Henning Molfenter",
+            "notes": "co-producer"
+        },
+        {
+            "name": "Bruce Moriarty",
+            "notes": "associate producer"
+        },
+        {
+            "name": "Lloyd Phillips",
+            "notes": "executive producer"
+        },
+        {
+            "name": "Pilar Savone",
+            "notes": "associate producer"
+        },
+        {
+            "name": "Erica Steinberg",
+            "notes": "executive producer"
+        },
+        {
+            "name": "Bob Weinstein",
+            "notes": "executive producer"
+        },
+        {
+            "name": "Harvey Weinstein",
+            "notes": "executive producer"
+        },
+        {
+            "name": "Charlie Woebcken",
+            "notes": "co-producer (as Carl L. Woebcken)"
+        }
+    ],
+    "cinematographer": [
+        {
+            "name": "Robert Richardson",
+            "notes": "director of photography"
+        }
+    ],
+    "editor": [
+        {
+            "name": "Sally Menke",
+            "notes": ""
+        }
     ]
 }

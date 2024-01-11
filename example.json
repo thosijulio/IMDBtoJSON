@@ -8,7 +8,8 @@
     "cast": [
         {
             "actor": "",
-            "role": ""
+            "role": "",
+            "note": ""
         }
     ],
     "genres": {
@@ -20,7 +21,7 @@
         ]
     },
     "runtime": 0,
-    "productionCountries": [
+    "productionCountriesCodes": [
         ""
     ],
     "colorInfo": [
@@ -39,8 +40,8 @@
         "enUS": "",
         "ptBR": ""
     },
-    "rating": 0,
-    "languages": [
+    "IMDBRating": 0,
+    "languagesCodes": [
         ""
     ],
     "director": [
@@ -63,7 +64,7 @@
     ],
     "productionCompanies": [
         {
-            "country": "",
+            "countryCode": "",
             "name": ""
         }
     ]

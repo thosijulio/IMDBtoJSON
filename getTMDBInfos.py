@@ -23,7 +23,7 @@ if response.status_code == 200:
     # Check if there are results
     if data['results']:
         # Assuming the first result is the desired movie
-        movie_id = data['results'][2]['id']
+        movie_id = data['results'][5]['id']
 
         # Get details of the movie by its ID
         request_movie_enUS = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US&append_to_response=credits')
@@ -53,7 +53,6 @@ if response.status_code == 200:
                     "enUS": list(map(lambda genre: genre['name'], movie_details_enUS['genres']))
                 },
                 "runtime": movie_details_enUS['runtime'],
-                "productionCountries": list(map(lambda genre: genre['name'], movie_details_enUS['production_countries'])),
                 "overview": {
                     "enUS": movie_details_enUS['overview'],
                     "ptBR": movie_details_ptBR['overview']
@@ -62,8 +61,7 @@ if response.status_code == 200:
                     "enUS": movie_details_enUS['tagline'],
                     "ptBR": movie_details_ptBR['tagline']
                 },
-                "languages": list(map(lambda language: language['english_name'], movie_details_enUS['spoken_languages'])),
-                "productionCompanies": list(map(lambda company: company['name'], movie_details_enUS['production_companies']))
+                "productionCompanies": list(map(lambda company: { "name": company['name'], "countryCode": company['origin_country'] }, movie_details_enUS['production_companies']))
             }
 
             # write a JSON file with the new data (creating a new if is necessary)

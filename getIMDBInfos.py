@@ -39,12 +39,13 @@ cast = [actor for actor in movie['cast'] if 'uncredited' not in str(actor.curren
 serialized_cast = [convert_to_dict(actor) for actor in cast]
     
 new_data = {
-    "cast": serialized_cast
+    "cast": serialized_cast,
+    "productionCountriesCodes": movie['country codes'],
+    "color info": movie['color info'],
+    "languageCodes": movie['language codes']
 }
 
- # write a JSON file with the new data (creating a new if is necessary)
-with open('movieTest.json', 'w', encoding='utf-8') as file:
-    json.dump({ **data, **new_data}, file, indent=4, ensure_ascii=False)
+
 
 for key in movie.keys():
     if (isinstance(movie[key], list)):
@@ -55,24 +56,17 @@ for key in movie.keys():
                 itens.append(item)
             else:
                 break
-        if(key in ['cast', 'director', 'writer', 'producer', 'composer', 'cinematographer', 'editor']):
+        if(key in ['director', 'writer', 'producer', 'composer', 'cinematographer', 'editor']):
             formattedItens = []
-            for item in itens:
-                if 'uncredited' not in item.currentRole and 'uncredited' not in item.notes and item.get('name') != None:
-                    if key == 'cast':
-                        formattedItens.append({ 'name': item.get('name'), 'role': item.currentRole, 'notes': item.notes })
-                    else:
-                        formattedItens.append({ 'name': item.get('name'), 'notes': item.notes })
-                    # f"{item.get('name')}{f' as {item.currentRole}' if item.currentRole else f' as {item.notes}' if item.notes and item.notes != key else ''}, \n"
             
-            print(f"{key}: {formattedItens}")
+            new_data[key] = list(map(lambda people: { "name": people.get('name', ''), "notes": people.notes if people.notes != key else ''}, movie[key]))
+            print(f"PEOPLES({key}): {formattedItens}")
         ##elif (key in ['make up', 'set decoration','casting director','editorial department','','','costume designer','special effects', 'music department', 'certificates', 'assistant director', 'production manager', 'sound crew', 'visual effects', 'akas', 'location management', 'costume department', 'stunt performer', 'visual effect', 'plot', 'synopsis', 'distributors', 'miscellaneous crew', 'art department', 'camera and electrical department', 'other companies', 'transportation department', 'script department']):
           ##  pass
         elif (key in ['genres', 'runtimes', 'countries', 'country codes', 'language codes', 'color info', 'languages']):
-            print(f"{key} (first {len(itens)}): {itens} \n")
+            print(f"USEFUL({key}): {itens} \n")
             
         else:
-            print(f"{key} ({len(itens)}): {itens}")
             pass
     elif (key in ['full-size cover url', 'smart long imdb canonical title', 'smart canonical title', 'long imdb canonical title', 'long imdb title', 'canonical title', 'imdbID', 'vote', 'localized title', 'cover url']):
         pass
@@ -80,7 +74,9 @@ for key in movie.keys():
         pass
 
 
-
+ # write a JSON file with the new data (creating a new if is necessary)
+with open('movieTest.json', 'w', encoding='utf-8') as file:
+    json.dump({ **data, **new_data}, file, indent=4, ensure_ascii=False)
     ##print(key)
     ##print(movie[key])
     ##if key == 'cast':
