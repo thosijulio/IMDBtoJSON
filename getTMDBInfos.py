@@ -23,7 +23,7 @@ if response.status_code == 200:
     # Check if there are results
     if data['results']:
         # Assuming the first result is the desired movie
-        movie_id = data['results'][5]['id']
+        movie_id = data['results'][2]['id']
 
         # Get details of the movie by its ID
         request_movie_enUS = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US&append_to_response=credits')

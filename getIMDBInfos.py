@@ -1,21 +1,24 @@
-import imdb
+from imdb import IMDb, Character
 import json
 
-def serialize_character(character):
-    return {
-        'name': character.get('name', ''),
-        'role': getattr(character, 'currentRole', ''),
-        'note': getattr(character, 'notes', '')
-    }
+def convert_to_dict(actor):
+    name = actor.get('name', '') if hasattr(actor, 'get') else ''
+    role = actor.currentRole if hasattr(actor, 'currentRole') and not isinstance(actor.currentRole, list) else ', '.join(map(str, getattr(actor, 'currentRole', [])))
+    note = getattr(actor, 'notes', '')
 
+    return {
+        'name': name,
+        'role': role if isinstance(role, str) else role.get('name', ''),
+        'note': note
+    }
 # Create an instance of the IMDb class
-ia = imdb.IMDb()
+ia = IMDb()
 
 # Retrieve a movie object
 # Search for the movie by its title
 movie_title = "Inglorious Bastard"  # Replace with your movie title
 movies = ia.search_movie(movie_title)
-movie = movies[0]
+movie = movies[1]
 not_working_keys = ['directors', 'countries', 'writer', 'color info', 'original airdate']
 working_keys = ['main', 'plot', 'awards', 'quotes', 'soundtrack', 'release dates']
 # Update and retrieve specific information
@@ -30,8 +33,10 @@ except FileNotFoundError:
     data = {}
     pass
 
+
 cast = [actor for actor in movie['cast'] if 'uncredited' not in str(actor.currentRole).lower() and 'uncredited' not in str(actor.notes).lower()]
-serialized_cast = [serialize_character(actor) for actor in cast]
+
+serialized_cast = [convert_to_dict(actor) for actor in cast]
     
 new_data = {
     "cast": serialized_cast
@@ -54,14 +59,8 @@ for key in movie.keys():
             formattedItens = []
             for item in itens:
                 if 'uncredited' not in item.currentRole and 'uncredited' not in item.notes and item.get('name') != None:
-                    if key == 'cast' and isinstance(item.currentRole, list):
-                        character_role = str(item.currentRole)
-                        character_name = character_role.split('_')[-2] if '_' in character_role else character_role
-                        formattedItens.append({ 'name': item.get('name'), 'role': character_name, 'notes': item.notes })
-                    elif key == 'cast':
-                        character_role = str(item.currentRole)
-                        character_name = character_role.split('_')[-2] if '_' in character_role else character_role
-                        formattedItens.append({ 'name': item.get('name'), 'role': character_name, 'notes': item.notes })
+                    if key == 'cast':
+                        formattedItens.append({ 'name': item.get('name'), 'role': item.currentRole, 'notes': item.notes })
                     else:
                         formattedItens.append({ 'name': item.get('name'), 'notes': item.notes })
                     # f"{item.get('name')}{f' as {item.currentRole}' if item.currentRole else f' as {item.notes}' if item.notes and item.notes != key else ''}, \n"

@@ -1,11 +1,289 @@
 {
-    "title": {
-        "original": "Inglourious Basterds",
-        "ptBR": "Bastardos Inglórios",
-        "enUS": "Inglourious Basterds"
-    },
-    "releaseYear": "2009-08-02",
     "cast": [
         {
             "name": "Brad Pitt",
-            "role": 
+            "role": "Lt. Aldo Raine",
+            "note": ""
+        },
+        {
+            "name": "Mélanie Laurent",
+            "role": "Shosanna",
+            "note": ""
+        },
+        {
+            "name": "Christoph Waltz",
+            "role": "Col. Hans Landa",
+            "note": ""
+        },
+        {
+            "name": "Eli Roth",
+            "role": "Sgt. Donny Donowitz",
+            "note": ""
+        },
+        {
+            "name": "Michael Fassbender",
+            "role": "Lt. Archie Hicox",
+            "note": ""
+        },
+        {
+            "name": "Diane Kruger",
+            "role": "Bridget von Hammersmark",
+            "note": ""
+        },
+        {
+            "name": "Daniel Brühl",
+            "role": "Fredrick Zoller",
+            "note": ""
+        },
+        {
+            "name": "Til Schweiger",
+            "role": "Sgt. Hugo Stiglitz",
+            "note": ""
+        },
+        {
+            "name": "Gedeon Burkhard",
+            "role": "Cpl. Wilhelm Wicki",
+            "note": ""
+        },
+        {
+            "name": "Jacky Ido",
+            "role": "Marcel",
+            "note": ""
+        },
+        {
+            "name": "B.J. Novak",
+            "role": "Pfc. Smithson Utivich",
+            "note": ""
+        },
+        {
+            "name": "Omar Doom",
+            "role": "Pfc. Omar Ulmer",
+            "note": ""
+        },
+        {
+            "name": "August Diehl",
+            "role": "Major Hellstrom",
+            "note": ""
+        },
+        {
+            "name": "Denis Ménochet",
+            "role": "Perrier LaPadite",
+            "note": ""
+        },
+        {
+            "name": "Sylvester Groth",
+            "role": "Joseph Goebbels",
+            "note": ""
+        },
+        {
+            "name": "Martin Wuttke",
+            "role": "Hitler",
+            "note": ""
+        },
+        {
+            "name": "Mike Myers",
+            "role": "General Ed Fenech",
+            "note": ""
+        },
+        {
+            "name": "Julie Dreyfus",
+            "role": "Francesca Mondino",
+            "note": ""
+        },
+        {
+            "name": "Richard Sammel",
+            "role": "Sgt. Rachtman",
+            "note": ""
+        },
+        {
+            "name": "Alexander Fehling",
+            "role": "Master Sgt. Wilhelm, Pola Negri",
+            "note": ""
+        },
+        {
+            "name": "Rod Taylor",
+            "role": "Winston Churchill",
+            "note": ""
+        },
+        {
+            "name": "Sönke Möhring",
+            "role": "Pvt. Butz, Walter Frazer",
+            "note": ""
+        },
+        {
+            "name": "Samm Levine",
+            "role": "Pfc. Hirschberg",
+            "note": ""
+        },
+        {
+            "name": "Paul Rust",
+            "role": "Pfc. Andy Kagan",
+            "note": ""
+        },
+        {
+            "name": "Michael Bacall",
+            "role": "Pfc. Michael Zimmerman",
+            "note": ""
+        },
+        {
+            "name": "Arndt Schwering-Sohnrey",
+            "role": "German Soldier, Winnetou",
+            "note": ""
+        },
+        {
+            "name": "Petra Hartung",
+            "role": "German Female Soldier, Beethoven",
+            "note": ""
+        },
+        {
+            "name": "Volker Zack",
+            "role": "German Soldier, Edgar Wallace",
+            "note": ""
+        },
+        {
+            "name": "Ken Duken",
+            "role": "German Soldier, Mata Hari",
+            "note": ""
+        },
+        {
+            "name": "Christian Berkel",
+            "role": "Proprietor Eric",
+            "note": ""
+        },
+        {
+            "name": "Anne-Sophie Franck",
+            "role": "Mathilda",
+            "note": ""
+        },
+        {
+            "name": "Léa Seydoux",
+            "role": "Charlotte LaPadite",
+            "note": ""
+        },
+        {
+            "name": "Tina Rodriguez",
+            "role": "Julie LaPadite",
+            "note": ""
+        },
+        {
+            "name": "Lena Friedrich",
+            "role": "Suzanne LaPadite",
+            "note": ""
+        },
+        {
+            "name": "Ludger Pistor",
+            "role": "Cpt. Wolfgang",
+            "note": ""
+        },
+        {
+            "name": "Jana Pallaske",
+            "role": "Babette",
+            "note": ""
+        },
+        {
+            "name": "Wolfgang Lindner",
+            "role": "Herrman #1",
+            "note": ""
+        },
+        {
+            "name": "Michael Kranz",
+            "role": "Herrman #3",
+            "note": ""
+        },
+        {
+            "name": "Rainer Bock",
+            "role": "General Schonherr",
+            "note": ""
+        },
+        {
+            "name": "André Penvern",
+            "role": "Old French Veterinarian",
+            "note": ""
+        },
+        {
+            "name": "Sebastian Hülk",
+            "role": "Hellstrom's Driver, Nazi Usher #1",
+            "note": ""
+        },
+        {
+            "name": "Buddy Joe Hooker",
+            "role": "Gaspar",
+            "note": ""
+        },
+        {
+            "name": "Carlos Fidel",
+            "role": "Pfc. Simon Sakowitz",
+            "note": ""
+        },
+        {
+            "name": "Christian Brückner",
+            "role": "Kliest Voice",
+            "note": "(voice)"
+        },
+        {
+            "name": "Hilmar Eichhorn",
+            "role": "Emil Jannings",
+            "note": ""
+        },
+        {
+            "name": "Patrick Elias",
+            "role": "Jakob Dreyfus",
+            "note": ""
+        },
+        {
+            "name": "Eva Löbau",
+            "role": "Miriam Dreyfus",
+            "note": ""
+        },
+        {
+            "name": "Salvadore Brandt",
+            "role": "Bob Dreyfus",
+            "note": ""
+        },
+        {
+            "name": "Jasper Linnewedel",
+            "role": "Amos Dreyfus",
+            "note": ""
+        },
+        {
+            "name": "Wilfried Hochholdinger",
+            "role": "German Company Sgt.",
+            "note": ""
+        },
+        {
+            "name": "Olivier Girard",
+            "role": "Maxim's Waiter",
+            "note": ""
+        },
+        {
+            "name": "Michael Scheel",
+            "role": "General Frank",
+            "note": ""
+        },
+        {
+            "name": "Leo Plank",
+            "role": "Motorcycle Rider #1",
+            "note": ""
+        },
+        {
+            "name": "Andreas Tietz",
+            "role": "Motorcycle Rider #2",
+            "note": ""
+        },
+        {
+            "name": "Bo Svenson",
+            "role": "American Colonel",
+            "note": ""
+        },
+        {
+            "name": "Enzo G. Castellari",
+            "role": "Enzo G. Castellari",
+            "note": ""
+        },
+        {
+            "name": "Quentin Tarantino",
+            "role": "First Scalped Nazi, American Soldier in 'Pride of Nation'",
+            "note": ""
+        }
+    ]
+}
