@@ -2,28 +2,35 @@ import requests
 import os
 from dotenv import load_dotenv
 import json
+import argparse
+
+# Create an ArgumentParser object
+parser = argparse.ArgumentParser()
+parser.add_argument('--movie_id', type=int, help='Id from a movie in the TMDB API')
+parser.add_argument('--movie_title', type=str, help='Title from a movie')
+
+# Parse the command-line arguments
+args = parser.parse_args()
 
 load_dotenv()
 
 # Replace 'YOUR_API_KEY' with your actual TMDb API key
 api_key = os.environ.get('TMDB_API_KEY')
 
-# Movie title to search for
-movie_title = "Inglorious Bastards"  # Replace this with the movie title you're interested in
-
 # TMDb API URL for searching movies
-search_url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={movie_title}&language=pt-BR/credits"
+search_by_movie_title_url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={args.movie_title}&language=pt-BR/credits"
 
 # Make the GET request to search for the movie
-response = requests.get(search_url)
+response = requests.get(search_by_movie_title_url) if args.movie_title is not None else None
 
-if response.status_code == 200:
-    data = response.json()
+
+if (response is not None and response.status_code == 200) or args.movie_id is not None:
+    data = response.json() if args.movie_title else None
 
     # Check if there are results
-    if data['results']:
-        # Assuming the first result is the desired movie
-        movie_id = data['results'][5]['id']
+    if data or args.movie_id is not None:
+        # Assuming the first result is the desired movie if the movie_title arg
+        movie_id = data['results'][0]['id'] if args.movie_title is not None else args.movie_id
 
         # Get details of the movie by its ID
         request_movie_enUS = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US&append_to_response=credits')
