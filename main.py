@@ -1,36 +1,23 @@
-import imdb
-import xml.etree.ElementTree as ET
+import argparse
+from getIMDBInfos import getIMDBInfos
+from getTMDBInfos import getTMDBInfos
 
-# Create an instance of the IMDb class
-IMDB_INSTANCE = imdb.IMDb()
+def main():
+    # Create an ArgumentParser object
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--imdb_movie_id', type=int, help='Id from a movie in the IMDB API')
+    parser.add_argument('--tmdb_movie_id', type=int, help='Id from a movie in the TMDB API')
+    parser.add_argument('--movie_title', type=str, help='Title from a movie')
 
-# Fetch movie data by its title
-movie_title = "Chicken Run: Dawn of the Nugget"
-movies = IMDB_INSTANCE.search_movie(movie_title)
+    # Parse the command-line arguments
+    args = parser.parse_args()
+    movie_title = args.movie_title
+    imdb_movie_id = args.imdb_movie_id
+    tmdb_movie_id = args.tmdb_movie_id
 
-if movies:
-    # Get the first movie (assuming it's the correct one)
-    movie = movies[0]
-    movie_id = movie.movieID
+    getTMDBInfos(movie_title, tmdb_movie_id)
+    getIMDBInfos(movie_title, imdb_movie_id)
 
-    IMDB_INSTANCE.update(movie)
+if __name__ == '__main__':
+    main()
 
-    print(movie.get('cast'))
-    # Create an XML structure
-    movie_xml = ET.Element('movie')
-    ET.SubElement(movie_xml, 'title').text = movie['title']
-
-    imdb_info = ET.SubElement(movie_xml, 'imdb')
-    ET.SubElement(imdb_info, 'id').text = movie.movieID
-    ET.SubElement(imdb_info, 'rating').text = str(movie.get('rating', 'N/A'))
-    ET.SubElement(imdb_info, 'votes').text = str(movie.get('votes', 'N/A'))
-    ET.SubElement(imdb_info, 'url').text = f"https://www.imdb.com/title/{movie.movieID}/"
-
-    # Add other necessary movie info to the XML structure
-    # For example, cast, director, writers, genres, etc.
-
-    # Create the XML file
-    xml_file = ET.ElementTree(movie_xml)
-    xml_file.write('Chicken Run - Dawn of the Nugget.xml', encoding='utf-8', xml_declaration=True)
-else:
-    print("Movie not found")
