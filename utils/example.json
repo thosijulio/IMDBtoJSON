@@ -7,9 +7,11 @@
     "releaseYear": "",
     "cast": [
         {
+            "imdbId": "",
             "actor": "",
             "role": "",
-            "note": ""
+            "note": "",
+            "img": ""
         }
     ],
     "genres": {

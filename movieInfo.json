@@ -1,0 +1,358 @@
+{
+    "title": {
+        "original": "Star Wars",
+        "ptBR": "Guerra nas Estrelas",
+        "enUS": "Star Wars"
+    },
+    "releaseYear": "1977-05-25",
+    "genres": {
+        "ptBR": [
+            "Aventura",
+            "Ação",
+            "Ficção científica"
+        ],
+        "enUS": [
+            "Adventure",
+            "Action",
+            "Science Fiction"
+        ]
+    },
+    "runtime": 121,
+    "overview": {
+        "enUS": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+        "ptBR": "A princesa Leia é mantida refém pelas forças imperiais comandadas por Darth Vader. Luke Skywalker e Han Solo precisam libertá-la e restaurar a liberdade e a justiça na galáxia."
+    },
+    "tagline": {
+        "enUS": "A long time ago in a galaxy far, far away...",
+        "ptBR": "Que a força esteja com você!"
+    },
+    "productionCompanies": [
+        {
+            "name": "Lucasfilm Ltd.",
+            "countryCode": "US"
+        },
+        {
+            "name": "20th Century Fox",
+            "countryCode": "US"
+        }
+    ],
+    "cast": [
+        {
+            "imdbId": "0000434",
+            "name": "Mark Hamill",
+            "role": "Luke Skywalker",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMzUyYTIzMDktZTQ3OC00NDczLThmOTEtODA1OWZkMzg2NjM1XkEyXkFqcGdeQXVyMTAxNjUxNTAw.jpg"
+        },
+        {
+            "imdbId": "0000148",
+            "name": "Harrison Ford",
+            "role": "Han Solo",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTY4Mjg0NjIxOV5BMl5BanBnXkFtZTcwMTM2NTI3MQ@@.jpg"
+        },
+        {
+            "imdbId": "0000402",
+            "name": "Carrie Fisher",
+            "role": "Princess Leia Organa",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMjM4ODU5MDY4MV5BMl5BanBnXkFtZTgwODY1MjQ5MDI@.jpg"
+        },
+        {
+            "imdbId": "0001088",
+            "name": "Peter Cushing",
+            "role": "Grand Moff Tarkin",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BNTM4NzE4NTIwNl5BMl5BanBnXkFtZTYwMTYxNzM2.jpg"
+        },
+        {
+            "imdbId": "0000027",
+            "name": "Alec Guinness",
+            "role": "Ben Obi-Wan Kenobi",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTUyMjgzMjczOF5BMl5BanBnXkFtZTgwNzcyMzQyNDM@.jpg"
+        },
+        {
+            "imdbId": "0000355",
+            "name": "Anthony Daniels",
+            "role": "C-3PO",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMzg3MzU2NTUxMF5BMl5BanBnXkFtZTcwMTE1NjI4NA@@.jpg"
+        },
+        {
+            "imdbId": "0048652",
+            "name": "Kenny Baker",
+            "role": "R2-D2",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTg1OTA3MzU0NV5BMl5BanBnXkFtZTcwNjY2Njk4Nw@@.jpg"
+        },
+        {
+            "imdbId": "0562679",
+            "name": "Peter Mayhew",
+            "role": "Chewbacca",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BNjg1NDUzMzM3NF5BMl5BanBnXkFtZTcwMDg4NTczMQ@@.jpg"
+        },
+        {
+            "imdbId": "0001190",
+            "name": "David Prowse",
+            "role": "Darth Vader",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTEyODc0MTUzODBeQTJeQWpwZ15BbWU4MDUyMjc3OTAx.jpg"
+        },
+        {
+            "imdbId": "0114436",
+            "name": "Phil Brown",
+            "role": "Uncle Owen",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMDkxYTdkZjUtNDM4ZS00YTM3LWI2MzktODM1MTlhYjJkZjI5XkEyXkFqcGdeQXVyMjk3NTUyOTc@.jpg"
+        },
+        {
+            "imdbId": "0292235",
+            "name": "Shelagh Fraser",
+            "role": "Aunt Beru",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BNjVjMTVkZWItZDIyMy00ZDM4LTlhMWQtNWM4NTg4MDY3MjBmXkEyXkFqcGdeQXVyMjk3NTUyOTc@.jpg"
+        },
+        {
+            "imdbId": "0701023",
+            "name": "Jack Purvis",
+            "role": "Chief Jawa",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTM3OTkwNjk0NF5BMl5BanBnXkFtZTcwNjQzNTk0OA@@.jpg"
+        },
+        {
+            "imdbId": "0567018",
+            "name": "Alex McCrindle",
+            "role": "General Dodonna",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTVlNWNhZjEtOTA4Ny00MjZjLWFhNjUtZDQxNDY5ZDU2ODFjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjk3NTUyOTc@.jpg"
+        },
+        {
+            "imdbId": "0125952",
+            "name": "Eddie Byrne",
+            "role": "General Willard",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMGIyZjcxMDUtMjdhNy00NTkxLWE2OTEtMDZmNjAwZjZjNjYzXkEyXkFqcGdeQXVyNTEzNDY5MjM@.jpg"
+        },
+        {
+            "imdbId": "0377120",
+            "name": "Drewe Henley",
+            "role": "Red Leader",
+            "note": "(as Drewe Hemley)",
+            "img": "https://m.media-amazon.com/images/M/MV5BNjA1OTMxNDg5N15BMl5BanBnXkFtZTgwMzUwMzg4MDI@.jpg"
+        },
+        {
+            "imdbId": "0493200",
+            "name": "Denis Lawson",
+            "role": "Red Two",
+            "note": "(Wedge) (as Dennis Lawson)",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTQyMDE3NjA0OF5BMl5BanBnXkFtZTcwNDY0MTUwOA@@.jpg"
+        },
+        {
+            "imdbId": "0353796",
+            "name": "Garrick Hagon",
+            "role": "Red Three",
+            "note": "(Biggs)",
+            "img": "https://m.media-amazon.com/images/M/MV5BMjA4Njk1ODY5OF5BMl5BanBnXkFtZTgwODcxNzAzMTE@.jpg"
+        },
+        {
+            "imdbId": "0458161",
+            "name": "Jack Klaff",
+            "role": "Red Four",
+            "note": "(John D.)",
+            "img": "https://m.media-amazon.com/images/M/MV5BYmU1YzdjMTUtZjQ4My00Yjc5LTk1ZjgtMzUxNjIwZmY4ZTg5XkEyXkFqcGdeQXVyNjUxMjc1OTM@.jpg"
+        },
+        {
+            "imdbId": "0393853",
+            "name": "William Hootkins",
+            "role": "Red Six",
+            "note": "(Porkins)",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTk0MjkzOTE1M15BMl5BanBnXkFtZTYwOTY2OTgy.jpg"
+        },
+        {
+            "imdbId": "0532815",
+            "name": "Angus MacInnes",
+            "role": "Gold Leader",
+            "note": "(as Angus Mcinnis)",
+            "img": "https://m.media-amazon.com/images/M/MV5BNDFkZDhjZWEtYzE5NC00YjFmLThmODMtM2MxZjQ1MmRiMDJiXkEyXkFqcGdeQXVyNjUxMjc1OTM@.jpg"
+        },
+        {
+            "imdbId": "0801788",
+            "name": "Jeremy Sinden",
+            "role": "Gold Two",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BOTA3MjgzOTU4MV5BMl5BanBnXkFtZTgwODI2NDczMjE@.jpg"
+        },
+        {
+            "imdbId": "0039061",
+            "name": "Graham Ashley",
+            "role": "Gold Five",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BNWQyNWViYWYtNjE5Yy00MjQ4LWIzYmQtYTQzZTBkM2MxZjEyXkEyXkFqcGdeQXVyNjUxMjc1OTM@.jpg"
+        },
+        {
+            "imdbId": "0376405",
+            "name": "Don Henderson",
+            "role": "General Taggi",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BNmMwOTgxNjItNzA4ZS00MTIxLWI4MjYtNzQ5NWE5YTdlZmFhXkEyXkFqcGdeQXVyNjUxMjc1OTM@.jpg"
+        },
+        {
+            "imdbId": "0503236",
+            "name": "Richard LeParmentier",
+            "role": "General Motti",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTUwNjk5NzYwOV5BMl5BanBnXkFtZTcwNTMwNzkzOQ@@.jpg"
+        },
+        {
+            "imdbId": "0774532",
+            "name": "Leslie Schofield",
+            "role": "Commander #1",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BZmVkMGI5NjYtZTkxZS00Njg3LWJlNTUtZDA1NzIwY2NlMjYwXkEyXkFqcGdeQXVyMTQxMjk0Mg@@.jpg"
+        },
+        {
+            "imdbId": "0224701",
+            "name": "Peter Diamond",
+            "role": "Stormtrooper, Tusken Raider, Death Star Trooper, Garouf Lafoe",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BNjlmZGQ5NGYtNTA3MC00MDc4LThhYzItMDI0NGM4ZDgyN2Y4XkEyXkFqcGdeQXVyNjUxMjc1OTM@.jpg"
+        },
+        {
+            "imdbId": "0286599",
+            "name": "Anthony Forrest",
+            "role": "Sandtrooper, Fixer",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BOTQ5MDA1NWEtM2VhYi00YmQ3LTkwNWItMDViMzhiYTdiNmI4XkEyXkFqcGdeQXVyMTUxMzQwNTc@.jpg"
+        },
+        {
+            "imdbId": "0324597",
+            "name": "Rusty Goffe",
+            "role": "Kabe, Jawa, GONK Droid",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTE2Yjc2MDctNTExMS00OTJkLWE4NWEtOTMyYmYxZmZlY2EyXkEyXkFqcGdeQXVyMjc4NzY1MTM@.jpg"
+        },
+        {
+            "imdbId": "0514086",
+            "name": "Laine Liska",
+            "role": "Muftak, Cantina Band Member",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BNDQyOTU2M2ItNTZhMy00ZjY5LTgzMGEtNGZhY2E2N2FmODgyXkEyXkFqcGdeQXVyNjUxMjc1OTM@.jpg"
+        },
+        {
+            "imdbId": "1750488",
+            "name": "Derek Lyons",
+            "role": "Temple Guard, Medal Bearer",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTIzMTYxMjA1N15BMl5BanBnXkFtZTcwMTk4OTgyMQ@@.jpg"
+        },
+        {
+            "imdbId": "0843143",
+            "name": "Tom Sylla",
+            "role": "Massassi Outpost Announcer, Various Voices",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BYjI0MTgzMWEtZjFkNy00YTUxLTliYTEtY2UwYmUwZGM0YzZlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjk3NTUyOTc@.jpg"
+        },
+        {
+            "imdbId": "0917236",
+            "name": "Harold Weed",
+            "role": "Ketwol, Melas",
+            "note": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@.jpg"
+        }
+    ],
+    "productionCountriesCodes": [
+        "us"
+    ],
+    "colorInfo": [
+        "Color::(Technicolor)"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "IMDBRating": 8.6,
+    "boxOffice": {
+        "Budget": "$11,000,000 (estimated)",
+        "Opening Weekend United States": "$35,906,661, 02 Feb 1997",
+        "Cumulative Worldwide Gross": "$775,398,007, 25 Nov 2011"
+    },
+    "director": [
+        {
+            "imdbId": "0000184",
+            "name": "George Lucas",
+            "notes": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTA0Mjc0NzExNzBeQTJeQWpwZ15BbWU3MDEzMzQ3MDI@.jpg"
+        }
+    ],
+    "writer": [
+        {
+            "imdbId": "0000184",
+            "name": "George Lucas",
+            "notes": "(written by)",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTA0Mjc0NzExNzBeQTJeQWpwZ15BbWU3MDEzMzQ3MDI@.jpg"
+        }
+    ],
+    "producer": [
+        {
+            "imdbId": "0476030",
+            "name": "Gary Kurtz",
+            "notes": "producer (produced by)",
+            "img": "https://m.media-amazon.com/images/M/MV5BMzgyMDA1MzYtYjA0NS00NzlkLTgxZjMtYTMxNjNkMWM2YzZmXkEyXkFqcGdeQXVyMjUyNDk2ODc@.jpg"
+        },
+        {
+            "imdbId": "0000184",
+            "name": "George Lucas",
+            "notes": "executive producer",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTA0Mjc0NzExNzBeQTJeQWpwZ15BbWU3MDEzMzQ3MDI@.jpg"
+        },
+        {
+            "imdbId": "0564768",
+            "name": "Rick McCallum",
+            "notes": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMzI0Mjk0OTg0OF5BMl5BanBnXkFtZTcwNzgxNjI4NA@@.jpg"
+        }
+    ],
+    "composer": [
+        {
+            "imdbId": "0002354",
+            "name": "John Williams",
+            "notes": "(music by)",
+            "img": "https://m.media-amazon.com/images/M/MV5BMjY5MTgzMTQ1NF5BMl5BanBnXkFtZTYwNDg3OTcz.jpg"
+        }
+    ],
+    "cinematographer": [
+        {
+            "imdbId": "0852405",
+            "name": "Gilbert Taylor",
+            "notes": "director of photography",
+            "img": "https://m.media-amazon.com/images/M/MV5BMTI1MzgxMjQ5OF5BMl5BanBnXkFtZTYwOTA4MzY3.jpg"
+        }
+    ],
+    "editor": [
+        {
+            "imdbId": "0156816",
+            "name": "Richard Chew",
+            "notes": "film editor",
+            "img": "https://m.media-amazon.com/images/M/MV5BMGVkOGFkN2YtNzU3MS00MTQ3LWE5MDktYTNmZjQ1MThmYmJkXkEyXkFqcGdeQXVyMTA3MzQ4MTc0.jpg"
+        },
+        {
+            "imdbId": "0160628",
+            "name": "T.M. Christopher",
+            "notes": "",
+            "img": "https://m.media-amazon.com/images/M/MV5BMGE5YTg3ZWMtYTdiOS00YTdlLWIzYTQtMDM0OWM0MmRlZDA4XkEyXkFqcGdeQXVyNjc5NjEzNA@@.jpg"
+        },
+        {
+            "imdbId": "0386532",
+            "name": "Paul Hirsch",
+            "notes": "film editor",
+            "img": "https://m.media-amazon.com/images/M/MV5BYWU1MjdlNmYtMmY4Ni00M2FhLTk0NDktYzRiNzU0Y2FmNjA5XkEyXkFqcGdeQXVyMDE0MTE1MQ@@.jpg"
+        },
+        {
+            "imdbId": "0524235",
+            "name": "Marcia Lucas",
+            "notes": "film editor",
+            "img": "https://m.media-amazon.com/images/M/MV5BNzI2NzJkN2YtN2Q1MC00MDM2LTkzYTItMDZhMTdjNmQyOTZmXkEyXkFqcGdeQXVyNjUxMjc1OTM@.jpg"
+        }
+    ]
+}

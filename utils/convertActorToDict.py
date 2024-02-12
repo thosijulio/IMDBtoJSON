@@ -1,4 +1,4 @@
-from services.getActorPictureById import getActorPictureById
+from services.getPersonPictureById import getPersonPictureById
 
 def convert_actor_to_dict(actor):
     name = actor.get('name', '') if hasattr(actor, 'get') else ''
@@ -7,8 +7,9 @@ def convert_actor_to_dict(actor):
     id = actor.personID
 
     return {
+        'imdbId': id,
         'name': name,
         'role': role if isinstance(role, str) else role.get('name', ''),
         'note': note,
-        'img': getActorPictureById(id)
+        'img': getPersonPictureById(id)
     }

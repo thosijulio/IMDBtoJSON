@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def getActorPictureById(actorId):
+def getPersonPictureById(actorId):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
@@ -16,9 +16,9 @@ def getActorPictureById(actorId):
 
         if photo_element:
             # Extract the photo URL
-            photo_url = photo_element.get('srcset')
+            photo_url = photo_element.get('src')
             if photo_url:                
-                return 'https://' + photo_url.split('https://')[-1].split('.jpg')[0] + '.jpg'
+                return photo_url.split('._')[0] + '.jpg'
             else:
                 return ''
         else:

@@ -1,6 +1,7 @@
 from imdb import IMDb
 import json
 from utils.convertActorToDict import convert_actor_to_dict
+from services.getPersonPictureById import getPersonPictureById
 
 def getIMDBInfos(movie_title, movie_id):
     # Create an instance of the IMDb class
@@ -12,7 +13,7 @@ def getIMDBInfos(movie_title, movie_id):
     movies = ia.search_movie(movie_title) if movie_title is not None else None
     movie = movies[0] if movies is not None else ia.get_movie(movie_id)
 
-    not_working_keys = ['directors', 'countries', 'writer', 'color info', 'original airdate']
+    _not_working_keys = ['directors', 'countries', 'writer', 'color info', 'original airdate']
     working_keys = ['main', 'plot', 'awards', 'quotes', 'soundtrack', 'release dates']
     # Update and retrieve specific information
     ia.update(movie, working_keys)
@@ -50,9 +51,12 @@ def getIMDBInfos(movie_title, movie_id):
                 else:
                     break
             if(key in ['director', 'writer', 'producer', 'composer', 'cinematographer', 'editor']):
-                formattedItens = []
-                
-                new_data[key] = list(map(lambda people: { "name": people.get('name', ''), "notes": people.notes if people.notes != key else ''}, [people for people in movie[key] if 'uncredited' not in str(people.notes).lower()]))
+                new_data[key] = list(map(lambda people: {
+                    "imdbId": people.personID if people.personID else '',
+                    "name": people.get('name', ''),
+                    "notes": people.notes if people.notes != key else '',
+                    "img": getPersonPictureById(people.personID) if people.personID else ''
+                }, [people for people in movie[key] if 'uncredited' not in str(people.notes).lower()]))
 
 
     # write a JSON file with the new data (creating a new if is necessary)
