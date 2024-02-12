@@ -19,7 +19,7 @@ def getIMDBInfos(movie_title, movie_id):
 
     # Try to open the file, if exists
     try:
-        with open('movieTest.json', 'r', encoding='utf-8') as file:
+        with open('movieInfo.json', 'r', encoding='utf-8') as file:
             data = json.load(file)
     except FileNotFoundError:
         # If file doesnt exists, creats a new object
@@ -56,5 +56,5 @@ def getIMDBInfos(movie_title, movie_id):
 
 
     # write a JSON file with the new data (creating a new if is necessary)
-    with open('movieTest.json', 'w', encoding='utf-8') as file:
+    with open('movieInfo.json', 'w', encoding='utf-8') as file:
         json.dump({ **data, **new_data}, file, indent=4, ensure_ascii=False)

@@ -1,6 +1,6 @@
 import argparse
-from getIMDBInfos import getIMDBInfos
-from getTMDBInfos import getTMDBInfos
+from services.getIMDBInfos import getIMDBInfos
+from services.getTMDBInfos import getTMDBInfos
 
 def main():
     # Create an ArgumentParser object
