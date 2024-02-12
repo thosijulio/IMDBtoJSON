@@ -7,3 +7,5 @@
 1. Instalar as dependências contidas no arquivo [requirements.txt](https://github.com/thosijulio/IMDBtoJSON/blob/main/requirements.txt)
 2. Criar uma key de acesso a API The Movie DB e adiciona-la ao enviroment (.env), como consta no exemplo [.env.example](https://github.com/thosijulio/IMDBtoJSON/blob/main/.env.example)
 3. Executar o arquivo main.py passando movie_title (o primeiro filme encontrado será retornado), ou imdb_movie_id e tmdb_movie_id.
+
+Após a execução do código (leva por volta de dois minutos para recuperar todas as informações), será gerado um arquivo na raíz projeto (movieInfo.json), contendo todas as informações sobre o filme buscado.
